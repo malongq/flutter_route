@@ -34,16 +34,16 @@ class SecondPage extends StatelessWidget{
       backgroundColor: Colors.blueAccent,
 
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.blueAccent,
         title: Text(
           '我是第二页',
           style: TextStyle(
             fontSize: 30.0,
-            color: Colors.blueAccent
+            color: Colors.white
           ),
         ),
         leading: Container(),
-        elevation: 4.0,
+        elevation: 0.0,
       ),
 
       body: Center(

@@ -39,13 +39,14 @@
 import 'package:flutter/material.dart';
 import 'secondPage.dart';
 import 'CustomRoute.dart';
+import 'NewCustomRoute.dart';
 
 class FirstPage extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
 
-      backgroundColor: Colors.redAccent,
+      backgroundColor: Colors.red,
 
       appBar: AppBar(
         title: Text(
@@ -62,7 +63,8 @@ class FirstPage extends StatelessWidget{
         child: MaterialButton(
             child: Icon(Icons.accessibility_new,size: 130.0,color: Colors.white,),
             onPressed: (){
-              Navigator.of(context).push(CustomRoute(SecondPage()));
+//              Navigator.of(context).push(CustomRoute(SecondPage()));
+              Navigator.of(context).push(NewCustomRoute(SecondPage()));
             }
         ),
       ),
